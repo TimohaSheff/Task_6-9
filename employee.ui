@@ -84,7 +84,7 @@
      </column>
      <column>
       <property name="text">
-       <string>Кол-во рабочих дней</string>
+       <string>Количество рабочих дней</string>
       </property>
      </column>
      <column>
@@ -94,7 +94,7 @@
      </column>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="clearButton">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -107,7 +107,7 @@
      <string>Очистить таблицу</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
       <x>880</x>
@@ -174,15 +174,6 @@
           </color>
          </brush>
         </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="128">
-           <red>0</red>
-           <green>0</green>
-           <blue>255</blue>
-          </color>
-         </brush>
-        </colorrole>
        </active>
        <inactive>
         <colorrole role="WindowText">
@@ -212,15 +203,6 @@
           </color>
          </brush>
         </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="128">
-           <red>0</red>
-           <green>0</green>
-           <blue>255</blue>
-          </color>
-         </brush>
-        </colorrole>
        </inactive>
        <disabled>
         <colorrole role="WindowText">
@@ -247,15 +229,6 @@
            <red>240</red>
            <green>240</green>
            <blue>240</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="128">
-           <red>0</red>
-           <green>0</green>
-           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -327,7 +300,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="loadTable">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -340,7 +313,7 @@
      <string>Внести данные</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="editButton">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -373,7 +346,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="deleteButton">
     <property name="geometry">
      <rect>
       <x>1040</x>
@@ -490,6 +463,19 @@
      <string>Столбец</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить таблицу</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -506,7 +492,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton_2</sender>
+   <sender>clearButton</sender>
    <signal>clicked()</signal>
    <receiver>tableWidget</receiver>
    <slot>clearContents()</slot>
